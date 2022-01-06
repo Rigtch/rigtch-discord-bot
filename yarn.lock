@@ -507,10 +507,10 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@discord-nestjs/core@2.1.9":
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/@discord-nestjs/core/-/core-2.1.9.tgz#ab70ee4b611c5956251dd586b4d731e388dcb0ce"
-  integrity sha512-7A+Gpr7mFDPDhE3e7IK3I1B/YlZ4q6Zjwi+zE7GohEB4BbBg4XBzYTV00lDoBR8NSGaNHlF6IAuC0n64Mk+JKQ==
+"@discord-nestjs/core@2.1.10":
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/@discord-nestjs/core/-/core-2.1.10.tgz#33ca04c36cbb89ccd32e22869b4affdee3993413"
+  integrity sha512-efGcO3635WsQ1Obd6CxMxeVIv4xOaiJhxKSOmObRdzVOM7vugXX01pcJeFqWwsgnlfbkm/B6UWX0mqOtA+nnEA==
   dependencies:
     class-transformer "0.4.0"
     glob "^7.2.0"

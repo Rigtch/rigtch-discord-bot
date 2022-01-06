@@ -22,7 +22,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@discord-nestjs/core": "2.1.9",
+    "@discord-nestjs/core": "2.1.10",
     "@nestjs/common": "^8.2.4",
     "@nestjs/config": "1.1.6",
     "@nestjs/core": "^8.2.4",
