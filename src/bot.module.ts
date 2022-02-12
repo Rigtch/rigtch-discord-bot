@@ -1,18 +1,28 @@
 import { DiscordModule } from '@discord-nestjs/core'
 import { Module } from '@nestjs/common'
-import { ConfigModule } from '@nestjs/config'
-import { Intents } from 'discord.js'
+import { ConfigModule, ConfigService } from '@nestjs/config'
+import { Intents, Message } from 'discord.js'
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true }),
-    DiscordModule.forRoot({
-      token: process.env.DISCORD_TOKEN,
-      commands: ['**.*.command.ts'],
-      discordClientOptions: {
-        intents: [Intents.FLAGS.GUILDS],
-      },
+    DiscordModule.forRootAsync({
+      imports: [ConfigModule.forRoot({ envFilePath: '.env' })],
+      useFactory: (configService: ConfigService) => ({
+        token: configService.get('TOKEN'),
+        commands: ['**/commands/*.command.js'],
+        discordClientOptions: {
+          intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+        },
+        registerCommandOptions: [
+          {
+            forGuild: configService.get('GUILD_ID_WITH_COMMANDS'),
+            allowFactory: (message: Message) =>
+              !message.author.bot && message.content === '!deploy',
+          },
+        ],
+      }),
+      inject: [ConfigService],
     }),
   ],
 })
-export class BotModule {}
+export class DiscordbotModule {}
