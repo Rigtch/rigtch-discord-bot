@@ -507,13 +507,13 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@discord-nestjs/core@2.1.9":
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/@discord-nestjs/core/-/core-2.1.9.tgz#ab70ee4b611c5956251dd586b4d731e388dcb0ce"
-  integrity sha512-7A+Gpr7mFDPDhE3e7IK3I1B/YlZ4q6Zjwi+zE7GohEB4BbBg4XBzYTV00lDoBR8NSGaNHlF6IAuC0n64Mk+JKQ==
+"@discord-nestjs/core@2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@discord-nestjs/core/-/core-2.4.0.tgz#2cabfca55483a7d87ddd9e819c8df34308db02f4"
+  integrity sha512-8w6YmRv7293Xa+2bcmlIGLGnJEHKWhn6HcE68nJMOue5fcWr5MxdSldkfH/i92dkK3U4I/WeYjA6b7kfhiUKfg==
   dependencies:
-    class-transformer "0.4.0"
-    glob "^7.2.0"
+    class-transformer "0.5.1"
+    glob "7.2.0"
 
 "@discordjs/builders@^0.11.0":
   version "0.11.0"
@@ -1891,11 +1891,6 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
 
-class-transformer@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.4.0.tgz#b52144117b423c516afb44cc1c76dbad31c2165b"
-  integrity sha512-ETWD/H2TbWbKEi7m9N4Km5+cw1hNcqJSxlSYhsLsNjQzWWiZIYA1zafxpK9PwVfaZ6AqR5rrjPVUBGESm5tQUA==
-
 class-transformer@0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.5.1.tgz#24147d5dffd2a6cea930a3250a677addf96ab336"
@@ -3140,7 +3135,7 @@ glob-to-regexp@^0.4.1:
   resolved "https://registry.yarnpkg.com/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz#c75297087c851b9a578bd217dd59a92f59fe546e"
   integrity sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
 
-glob@^7.0.0, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6, glob@^7.1.7, glob@^7.2.0:
+glob@7.2.0, glob@^7.0.0, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6, glob@^7.1.7:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
   integrity sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==
